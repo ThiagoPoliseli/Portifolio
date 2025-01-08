@@ -1,4 +1,3 @@
-/* Reset e Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     color: #333;
 }
 
-/* Navbar */
 #navbar {
     position: fixed;
     top: 0;
@@ -52,7 +50,6 @@ body {
     color: #3127e5;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -93,7 +90,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Sobre Section */
 .about {
     padding: 5rem 2rem;
     background: #f9f9f9;
@@ -134,7 +130,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projetos Section */
 .projects {
     padding: 5rem 2rem;
 }
@@ -197,7 +192,6 @@ body {
     font-weight: 500;
 }
 
-/* Contato Section */
 contact-section {
     text-align: center;
     padding: 50px;
@@ -243,35 +237,33 @@ contact-section {
 }
 
 .contact-item:hover a {
-    color: #0073b1; /* LinkedIn blue for example */
+    color: #0073b1; 
 }
 
 .box-contato {
-    width: 90%; /* Usa uma largura relativa para adaptar a diferentes telas */
-    max-width: 67em; /* Define um limite máximo para evitar que fique muito grande */
-    height: auto; /* Permite altura flexível */
+    width: 90%; 
+    max-width: 67em; 
+    height: auto; 
     background-color: #92a3df;
-    margin: 2em auto; /* Margem proporcional */
-    padding: 1em; /* Espaçamento interno para melhor aparência */
+    margin: 2em auto; 
+    padding: 1em; 
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1em;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Media query para telas menores, como smartphones */
 @media (max-width: 768px) {
     .box-contato {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        padding: 1.5em; /* Ajusta o espaçamento interno */
+        flex-direction: column; 
+        padding: 1.5em; 
     }
 }
 
-/* Media query para telas muito pequenas, como dispositivos de 320px */
 @media (max-width: 480px) {
     .box-contato {
-        font-size: 0.9em; /* Reduz o tamanho da fonte */
+        font-size: 0.9em; 
     }
 }
 
@@ -280,7 +272,7 @@ color-contato{
     color: rgb(186, 186, 186);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -288,7 +280,6 @@ footer {
     color: white;
 }
 
-/* Menu Mobile */
 .menu-btn {
     display: none;
     cursor: pointer;
@@ -302,7 +293,6 @@ footer {
     transition: 0.3s;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
