@@ -1,4 +1,3 @@
-// Menu Mobile
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -6,7 +5,6 @@ menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Efeito de Digitação
 const typingText = document.querySelector('.typing-text');
 const texts = ['Desenvolvedor Front-End', 'web developer'];
 let textIndex = 0;
@@ -36,10 +34,8 @@ function typeEffect() {
     }
 }
 
-// Iniciar efeito de digitação
 typeEffect();
 
-// Smooth Scroll para links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -50,23 +46,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Formulário de Contato
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Aqui você pode adicionar a lógica para enviar o formulário
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Por enquanto, apenas mostraremos um alerta
-    alert('Mensagem enviada com sucesso!');
-    contactForm.reset();
-});
-
-// Animação de scroll para as seções
 const sections = document.querySelectorAll('section');
 
 function checkScroll() {
@@ -79,7 +58,7 @@ function checkScroll() {
     });
 }
 
-// Adicionar estilo inicial para as seções
+
 sections.forEach(section => {
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
@@ -87,4 +66,4 @@ sections.forEach(section => {
 });
 
 window.addEventListener('scroll', checkScroll);
-checkScroll(); // Verificar posição inicial
+checkScroll(); 
